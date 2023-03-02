@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import TaskList from "./components/TaskList";
 import Modal from "./components/Modal";
 function App() {
