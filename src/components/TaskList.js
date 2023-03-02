@@ -1,10 +1,18 @@
-import React from "react";
+import React, { memo } from "react";
 
-export default function TaskList() {
+function TaskList() {
+  let localContent = JSON.parse(localStorage.getItem("arrayList"));
   return (
-    <div className="inner_flex list">
-      <span>Title</span>
-      <span> 01 : 23 : 12</span>
+    <div>
+      {localContent.map((item, index) => {
+        return (
+          <div key={index} className="inner_flex list">
+            <span>{item.title}</span>
+            <span>{item.calTime}</span>
+          </div>
+        );
+      })}
     </div>
   );
 }
+export default memo(TaskList);

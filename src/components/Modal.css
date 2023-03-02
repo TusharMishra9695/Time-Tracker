@@ -1,0 +1,51 @@
+.modal {
+  height: 300px;
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  position: fixed;
+  overflow: auto;
+  background-color: white;
+  z-index: 1;
+  left: 1;
+  top: 0;
+  margin-top: 40px;
+}
+.set_inp {
+  height: 40px;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px;
+}
+.set_des {
+  margin-top: 20px;
+  height: 60px;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px;
+}
+.modal_outer {
+  display: flex;
+  justify-content: center;
+}
+.modal_btn {
+  height: 30px;
+  width: 60px;
+  background-color: #95c5e8;
+  margin-right: 10px;
+  align-content: center;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px 2px #a09f9f;
+  border: none;
+  margin-left: 20px;
+}
+.close {
+  display: none;
+}
